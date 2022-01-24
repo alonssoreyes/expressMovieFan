@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  include navbar
+  each movie in movies
+    div(class="col-md-3 poster")
+      a(href=imageBaseUrl + movie.poster_path)
+        img(src=imageBaseUrl + movie.poster_path)
+

@@ -1,0 +1,9 @@
+
+div(class="container")
+    div(class="row")
+        each movie in movies 
+            div(class="col-sm-8 col-sm-offset-2 text-center")
+                h1(class="single-movie-title") #{movie.title}
+                h3(class="single-move-title") #{movie.tagline}
+                a(href=imageBaseUrl + movie.poster_path) 
+                    img(src=imageBaseUrl + movie.poster_path)
