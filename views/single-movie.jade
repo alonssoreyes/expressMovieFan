@@ -1,0 +1,9 @@
+extends layout 
+
+block content
+    include navbar
+    div(class="d-flex p-3")
+        img(src=imageBaseUrl + movie.poster_path, alt="Movie image" class="col-md-3 flex-start")
+        div(class="d-flex align-items-center")
+            h1 #{movie.title}
+            p #{movie.overview}
